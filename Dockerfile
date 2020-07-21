@@ -3,7 +3,7 @@ WORKDIR /expressapp
 COPY . .
 SHELL ["/bin/bash", "-c"]
 ENV NODE_VERSION=12.17.0
-ENV MONGO_HOST=host.docker.internal
+# ENV MONGO_HOST=host.docker.internal
 RUN apt update && apt install curl -y
 RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 ENV NVM_DIR=/root/.nvm

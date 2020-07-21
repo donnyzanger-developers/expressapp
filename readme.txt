@@ -12,7 +12,7 @@ sites-enabled follows sites-available, sites-available seems to be the important
         DocumentRoot /var/www/html
         ErrorLog ${APACHE_LOG_DIR}/error.log
         CustomLog ${APACHE_LOG_DIR}/access.log combined
-        ProxyPass / http://127.0.0.1:3000/ <------------------------------ new
+        ProxyPass / http://127.0.0.1:3000/ <------------------------------ new don't include arrows won't run with them even if they are comments
         ProxyPassReverse / http://127.0.0.1:3000/ <----------------------- new 
 </virtualHost>
 now enable proxy mode also
